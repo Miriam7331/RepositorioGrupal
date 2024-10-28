@@ -1,0 +1,49 @@
+/*se supone que es la fuente usada por pokemon*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    background-color: #f0f8ff; 
+    color: #333; 
+    font-family: 'Press Start 2P', cursive;
+}
+header {
+    background-color: #ff4757; 
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+main {
+    display: flex;
+    flex: 1;
+}
+nav {
+    background-color: #2ed573;
+    color: white;
+    width: 200px;
+    padding: 20px;
+}
+section {
+    background-color: #fff; /* Blanco para secciones */
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ffcc00; /* Amarillo para el borde */
+}
+aside {
+    background-color: #d9c29a; /* Igual que nav */
+    width: 200px;
+    padding: 20px;
+}
+button {
+    background-color: #ff6b81; /* Naranja */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
