@@ -30,8 +30,11 @@ section {
 }
 aside {
     background-color: #d9c29a; /* Igual que nav */
+    color: white;
     width: 200px;
     padding: 20px;
+    border-left: 2px solid #ccc; /* Línea divisoria */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 button {
     background-color: #ff6b81; /* Naranja */
