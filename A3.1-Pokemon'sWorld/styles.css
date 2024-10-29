@@ -1,4 +1,3 @@
-/*se supone que es la fuente usada por pokemon*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
@@ -14,19 +13,65 @@ h2,
 h3,
 h4 {
     font-family: 'Press Start 2P', cursive;
+    margin: 0;
 }
 
 header {
-    background-color: #ff4757;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1ebc4;
     padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: 20px;
+    width: 15%;
+    max-width: 200px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    color: transparent;
+    background: linear-gradient(to right, #ffcc00, #ff0000, #00ccff);
+    -webkit-background-clip: text; 
+    background-clip: text;
     text-align: center;
-    font-size: 24px;
-    color: white;
+    margin: 0;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    .logo {
+        width: 25%;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 40%;
+        max-width: 100px;
+    }
 }
 
 main {
     display: flex;
     flex: 1;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
 }
 
 nav {
@@ -89,4 +134,15 @@ main th {
 main td,
 main th {
     border: 1px solid black;
+}
+audio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 204, 0, 0.8);
+    border: 3px solid rgba(46, 213, 115, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
