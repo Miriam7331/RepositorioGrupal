@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A3.1 Pokemon's World</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<x-head></x-head>
 
 <body>
-    <header>
-        <h1>Encabezado</h1>
-    </header>
+
+    <x-header></x-header>
 
     <main>
-
-        <nav>
-            <ul>
-                <li>Navegación 1</li>
-                <li>Navegación 2</li>
-                <li>Navegación 3</li>
-                <li>Navegación 4</li>
-                <li>Navegación 5</li>
-                <li>Navegación 6</li>
-            </ul>
-        </nav>
+        <x-nav></x-nav>
 
         <section>
-
             <article>
                 <h2>Pokémon Rojo, Azul, Verde, Rojo Fuego, Verde Hoja</h2>
                 <p>Un Pokémon inicial (Starter Pokémon en inglés; はじめてのポケモン Primer Pokémon en japonés), llamado también de forma oficial pero inconsistente primer compañero Pokémon (First partner Pokémon en inglés), es el primer Pokémon con el que un entrenador comienza su aventura. Muchos entrenadores prefieren tener en su equipo dicho Pokémon porque con él establecen una importante relación de amistad y confianza, o porque creen que es el mejor Pokémon para su aventura.
@@ -97,57 +80,17 @@
             </article>
         </section>
 
-        <aside>
-            Anuncios
-        </aside>
+        <x-aside></x-aside>
 
     </main>
 
-    <footer>
-        Pie de página
-    </footer>
+    <audio id="miAudio" controls autoplay>
+        <source src="musiquita.mp3" type="audio/mpeg">
+    </audio>
 
+    <x-footer></x-footer>
 
-<header>
-    <div class="logo">
-        <img src="logo.png" alt="Logo de Pokémon" class="logo">
-    </div>
-    <div class="titulo">
-        <span class="p">P</span>
-        <span class="o">O</span>
-        <span class="k">K</span>
-        <span class="e">E</span>
-        <span class="m">M</span>
-        <span class="o">O</span>
-        <span class="n">N</span>
-    </div>
-</header>
-
-<main>
-    <nav>
-        Navegación
-    </nav>
-    <section>
-        <h2>Sección 1</h2>
-        <p>Contenido de la sección 1.</p>
-        <p>Contenido de la sección 1.Contenido de la sección 1.</p>
-    </section>
-    <aside>
-        <img src="logoAdd.png" alt="Logo del Campeonato Mundial de Pokémon" style="width: 100%;"/>
-        <h2>¡Campeonato Mundial de Pokémon!</h2>
-        <p>Únete a los mejores entrenadores de todo el mundo en la competencia más emocionante del año. ¡Demuestra tu habilidad, estrategia y amor por Pokémon en este evento épico!</p>
-        <p>Escanea el QR para más información y detalles de inscripción:</p>
-        <img src="qr.png" alt="Código QR" style="width: 100%;"/>
-    </aside>
-</main>
-<audio id="miAudio" controls autoplay>
-    <source src="musiquita.mp3" type="audio/mpeg">
-</audio>
-<footer>
-    Pie de página
-</footer>
-<script src="script.js"></script>
-
+    <script type="module" src="../script.js"></script>
 </body>
 
 </html>
