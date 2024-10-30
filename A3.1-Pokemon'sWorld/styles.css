@@ -6,6 +6,7 @@ body {
     color: #333;
     font-family: "Dosis", sans-serif;
     font-size: 1.2em;
+    margin: 0;
 }
 
 h1,
@@ -41,43 +42,25 @@ header {
     font-size: 2.5rem;
     color: transparent;
     background: linear-gradient(to right, #ffcc00, #ff0000, #00ccff);
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
     margin: 0;
     flex-grow: 1;
 }
 
-@media (max-width: 768px) {
-    .titulo {
-        font-size: 2rem;
-    }
-    .logo {
-        width: 25%;
-        max-width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .titulo {
-        font-size: 1.5rem;
-    }
-    .logo {
-        width: 40%;
-        max-width: 100px;
-    }
-}
-
 main {
     display: flex;
     flex: 1;
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se ajusten en pantallas pequeñas */
 }
 
 nav {
-    background-color: #2ed573;
+    background: rgb(239, 64, 53);
+    background: linear-gradient(180deg, rgba(239, 64, 53, 1) 0%, rgba(88, 88, 90, 1) 40%, rgba(255, 255, 255, 1) 70%);
     color: white;
-    width: 250px;
+    width: 200px;
     padding: 20px;
 }
 
@@ -97,6 +80,7 @@ main article {
     flex-direction: column;
     text-align: center;
     margin: 20px;
+    padding: 20px;
 }
 
 main article img {
@@ -105,15 +89,20 @@ main article img {
 }
 
 aside {
-    background-color: #d9c29a;
-    /* Igual que nav */
+    background: rgb(239, 64, 53);
+    background: linear-gradient(180deg, rgba(239, 64, 53, 1) 0%, rgba(88, 88, 90, 1) 40%, rgba(255, 255, 255, 1) 70%);
     color: white;
-    width: 250px;
+    width: 200px;
     padding: 20px;
     border-left: 2px solid #ccc;
     /* Línea divisoria */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
+    overflow-y: auto;
+}
+
+aside h2 {
+    font-size: 1em;
 }
 
 footer {
@@ -135,6 +124,7 @@ main td,
 main th {
     border: 1px solid black;
 }
+
 audio {
     position: fixed;
     bottom: 20px;
