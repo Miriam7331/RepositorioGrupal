@@ -12,6 +12,7 @@ class head extends HTMLElement {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>A3.1 Pokemon's World</title>
             <link rel="stylesheet" href="../styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         </head>
         `;
     }
@@ -41,7 +42,7 @@ class aside extends HTMLElement {
             <img src="../media/logoAdd.png" alt="Logo del Campeonato Mundial de Pokémon" style="width: 100%;" />
             <h2>¡Campeonato Mundial de Pokémon!</h2>
             <p>Únete a los mejores entrenadores de todo el mundo en la competencia más emocionante del año. ¡Demuestra tu habilidad, estrategia y amor por Pokémon en este evento épico!</p>
-            <p>Escanea el QR para más información y detalles de inscripción:</p>
+            <p>Clica en este <a href="https://unite.pokemon.com/es-es/championship/"> enlace</a> o escanea el QR para más información y detalles de inscripción:</p>
             <img src="../media/qr.png" alt="Código QR" style="width: 100%;" />
         </aside>
     `;
@@ -70,7 +71,18 @@ class footer extends HTMLElement {
         super();
         this.outerHTML = /*html*/ `
         <footer>
-            Pie de página
+        <p>&copy; 2024 Pokedex. Todos los derechos reservados.</p>
+        <div class="social-media">
+        <a href="https://www.instagram.com/pokemonesp/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/user/PokemonOficialES" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.twitter.com/pokemon_es_esp" target="_blank" aria-label="X (Twitter)">
+            <i class="fab fa-x"></i>
+        </a>
+    </div>
         </footer>
     `;
     }
