@@ -9,33 +9,11 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo de Pokémon" class="logo">
-        </div>
-        <div class="titulo">
-            <h4>
-                <span class="p">P</span>
-                <span class="o">O</span>
-                <span class="k">K</span>
-                <span class="e">E</span>
-                <span class="m">M</span>
-                <span class="o">O</span>
-                <span class="n">N</span>
-            </h4>
-        </div>
-    </header>
+
+    <x-header></x-header>
 
     <main>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Bulbasaur</li>
-                <li>Charmander</li>
-                <li>Squirtle</li>
-                <li>Pikachu</li>
-            </ul>
-        </nav>
+        <x-nav></x-nav>
 
         <section>
 
@@ -107,21 +85,18 @@
 
             </article>
         </section>
-        <aside>
-            <img src="logoAdd.png" alt="Logo del Campeonato Mundial de Pokémon" style="width: 100%;" />
-            <h2>¡Campeonato Mundial de Pokémon!</h2>
-            <p>Únete a los mejores entrenadores de todo el mundo en la competencia más emocionante del año. ¡Demuestra tu habilidad, estrategia y amor por Pokémon en este evento épico!</p>
-            <p>Escanea el QR para más información y detalles de inscripción:</p>
-            <img src="qr.png" alt="Código QR" style="width: 100%;" />
-        </aside>
+
+        <x-aside></x-aside>
+
     </main>
+    
     <audio id="miAudio" controls autoplay>
         <source src="musiquita.mp3" type="audio/mpeg">
     </audio>
-    <footer>
-        Pie de página
-    </footer>
-    <script src="script.js"></script>
+
+    <x-footer></x-footer>
+
+    <script type="module" src="script.js"></script>
 
 </body>
 
