@@ -74,24 +74,23 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 50px;
+    margin: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px;
     background-color: yellow;
-    border: 3px solid green;
+    border: 3px solid black;
     color: darkblue;
+    border-radius: 15px;
 }
 
 main section {
     background-color: #fff;
-    /* Blanco para secciones */
     flex: 1;
     padding: 20px;
     border: 2px solid #ffcc00;
-    /* Amarillo para el borde */
 }
 
 main article {
@@ -116,14 +115,24 @@ aside {
     width: 200px;
     padding: 20px;
     border-left: 2px solid #ccc;
-    /* Línea divisoria */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
     overflow-y: auto;
+    text-shadow: 1px 1px 0px black, /* Sombra para el borde */
+    -1px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black; /* Ajusta la distancia y el color aquí */
 }
 
 aside h2 {
     font-size: 1em;
+}
+
+aside p a {
+    text-decoration: none;
+    background-color: yellow;
+    border: 2px solid green;
+    color: darkblue;
+    text-shadow: none;
 }
 
 footer {
@@ -156,4 +165,16 @@ audio {
     padding: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+}
+
+.social-media a {
+    color: red;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-media a:hover {
+    color: darkred;
+}
+.social-media i {
+    font-size: 24px;
 }
