@@ -1,0 +1,9 @@
+El código proporcionado permite buscar en un input diferentes países y mostrarte en desplegables las diferentes opciones usando un input y con <ul> como opciones.
+
+Se te pide realizar las siguientes modificaciones:
+
+    Que el texto introducido por el usuario aparezca en negrita dentro de las opciones. 
+
+    Ahora mismo busca paises que empiecen por las letras introducidas, consigue que muestre primero los países que comiencen por las letras introducidas y luego los paises que contengan las letras introducidas.
+
+    Ahora mismo te autocompleta el texto escrito con las opciones disponibles, consigue que deje de hacerlo para que aparezca el texto del usuario y sea el usuario quien elija la opción. Asegúrate de que elige una opción correcta.

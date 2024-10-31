@@ -1,0 +1,43 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+form>* {
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    background-color: aquamarine;
+    color: darkgreen;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    font-weight: 600;
+    max-width: 200px;
+}
+
+#mensaje {
+    padding: 30px;
+    margin: 30px;
+    line-height: 50px;
+    background-color: brown;
+    border-radius: 5px;
+    border: 5px dotted black;
+    color: black;
+    display: none;
+}

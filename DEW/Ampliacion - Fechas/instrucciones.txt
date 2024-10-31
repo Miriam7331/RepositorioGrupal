@@ -1,0 +1,11 @@
+Usando una librería para fechas (a tu elección), realiza de nuevo la siguiente actividad:
+
+Realiza un script que solicite la fecha de nacimiento (puedes elegir tu el formato), y el nombre completo y muestre el año de nacimiento en función de :
+
+Si el usuario es menor de 18 años, le saldrá, debajo de su nombre completo y año de nacimiento, el mensaje: “Eres menor de edad, no podemos darte de alta hasta XXXX” (XXXX será la fecha concreta dónde cumplirá 18)
+
+Si es mayor de 18 años y menor de 25, le saldrá el mensaje: “Tienes un 10% de descuento”
+
+Si es mayor de 25 años, le saldrá el mensaje: “Lo sentimos, pero no tienes descuento”
+
+Si tiene justo 18 o 25 años, le saldrá el mensaje: “Premio, tienes un descuento especial del 20%”
